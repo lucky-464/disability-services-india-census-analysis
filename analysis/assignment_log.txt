@@ -1,0 +1,6 @@
+----------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/abhishek/Documents/Stata/assignment_log.txt
+  log type:  text
+ opened on:  20 Sep 2026, 12:30:48
+
