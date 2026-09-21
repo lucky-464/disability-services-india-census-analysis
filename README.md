@@ -65,9 +65,10 @@ pending as independent verification (see Caveats).
 
 ## Tools
 
-- - StataNow/MP 19.5 (data import, cleaning, analysis, chart)
+- StataNow/MP 19.5 (data import, cleaning, analysis, chart)
 
 ## Repo Structure
+
 ├── README.md
 ├── data/
 │ └── census_disability_states.dta # cleaned 5-state dataset
