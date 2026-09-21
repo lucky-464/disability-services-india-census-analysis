@@ -84,10 +84,15 @@ pending as independent verification (see Caveats).
 1. Download the Census 2011 C-20 file from data.gov.in (search:
    "Disabled Population by type of Disability, Age and Sex Census
    2011"); it downloads as `DDW-C20-0000.xlsx`.
-2. In Stata, run `scripts/census_state_comparison.do` top to bottom
-   (imports via `cellrange(A6)`, cleans, filters to state-level
-   totals, computes rates, exports chart).
-3. Chart appears as `output/state_comparison.png`.
+2. Convert to CSV: open the `.xlsx` in Excel or Numbers, **File →
+   Save As → CSV (UTF-8)**, name it `c20_disabled.csv`, and place it
+   in the same directory as the `.do` file.
+3. In Stata, run `scripts/census_state_comparison.do` top to bottom.
+   The script imports the CSV, drops the 5 leading header rows,
+   renames columns, destrings the count columns (handling embedded
+   commas), filters to state-level totals, keeps the 5 focus states,
+   computes prevalence rates, and exports the chart.
+4. Chart appears as `output/state_comparison.png`.
 
 ## Caveats
 
